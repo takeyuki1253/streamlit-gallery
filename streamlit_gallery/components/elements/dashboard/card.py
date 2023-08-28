@@ -17,12 +17,11 @@ class Card(Dashboard.Item):
                 action=mui.IconButton(mui.icon.MoreVert),
                 className=self._draggable_class,
             )
-            mui.CardMedia(
-                component="img",
-                height=194,
-                image="03-1.jpg",
-                alt="ikesu",
-            )
+            # mui.CardMedia(
+            #     component="img",
+            #     height=194,
+            #     alt="ikesu",
+            # )
 
             with mui.CardContent(sx={"flex": 1}):
                 mui.Typography(content)
