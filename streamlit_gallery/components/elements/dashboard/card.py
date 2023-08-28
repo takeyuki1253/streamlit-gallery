@@ -23,8 +23,8 @@ class Card(Dashboard.Item):
             #     alt="ikesu",
             # )
 
-            with mui.CardContent(sx={"flex": 1}):
-                mui.Typography(content)
+            # with mui.CardContent(sx={"flex": 1}):
+            #     mui.Typography(content)
 
             # with mui.CardActions(disableSpacing=True):
             #     mui.IconButton(mui.icon.Favorite)
