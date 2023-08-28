@@ -15,8 +15,8 @@ class Card(Dashboard.Item):
                 subheader="September 14, 2016",
                 avatar=mui.Avatar("R", sx={"bgcolor": "red"}),
                 action=mui.IconButton(mui.icon.MoreVert),
-                className=self._draggable_class,
-            )
+                className=self._draggable_class)
+            
             # mui.CardMedia(
             #     component="img",
             #     height=194,
