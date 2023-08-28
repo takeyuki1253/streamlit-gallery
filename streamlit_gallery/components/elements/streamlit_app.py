@@ -12,11 +12,10 @@ from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player
 def main():
     st.write(
         """
-        ✨ Streamlit Elements &nbsp; [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
+        Tsuna Test &nbsp; [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
         =====================
 
-        Create a draggable and resizable dashboard in Streamlit, featuring Material UI widgets,
-        Monaco editor (Visual Studio Code), Nivo charts, and more!
+        ツナの給餌量・給仕判断の可視化
 
         [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
         [github_link]: https://github.com/okld/streamlit-elements
@@ -56,7 +55,7 @@ def main():
 
         with w.dashboard(rowHeight=57):
             w.editor()
-            w.player()
+            # w.player()
             w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
             # w.card(w.editor.get_content("Card content"))
