@@ -61,7 +61,7 @@ def main():
             # w.player()
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
-            w.header(st.write(w.editor.get_content("header content"), unsafe_allow_html=True))
+            w.header(w.editor.get_content("header content"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
