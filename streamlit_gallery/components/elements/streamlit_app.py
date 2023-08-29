@@ -39,12 +39,13 @@ def main():
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
             card=Card(board, 6, 7, 3, 7, minW=2, minH=4),
-            # card2=Card(board, 6, 7, 3, 7, minW=2, minH=4),
+            card2=Card(board, 6, 7, 3, 7, minW=2, minH=4),
             data_grid=DataGrid(board, 6, 13, 6, 7, minH=4),
         )
         state.w = w
 
         w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Data grid", json.dumps(DataGrid.DEFAULT_ROWS, indent=2), "json")
         # w.editor.add_tab("Radar chart", json.dumps(Radar.DEFAULT_DATA, indent=2), "json")
         # w.editor.add_tab("Pie chart", json.dumps(Pie.DEFAULT_DATA, indent=2), "json")
@@ -60,7 +61,7 @@ def main():
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
             w.card(w.editor.get_content("Card content"))
-            # w.card(w.editor.get_content("Card content"))
+            w.card(w.editor.get_content("Card content2"))
             w.data_grid(w.editor.get_content("Data grid"))
 
 
