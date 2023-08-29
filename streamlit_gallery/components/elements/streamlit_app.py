@@ -33,10 +33,10 @@ def main():
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
-            card=Card(board, 0, 0, 6, 4, minW=2, minH=4),
-            card2=Card(board, 5, 0, 6, 4, minW=2, minH=4),
-            card3=Card(board, 10, 0, 6, 4, minW=2, minH=4),
-            card4=Card(board, 15, 0, 6, 4, minW=2, minH=4),
+            card=Card(board, 0, 0, 3, 6, minW=2, minH=4),
+            card2=Card(board, 5, 0, 3, 6, minW=2, minH=4),
+            card3=Card(board, 10, 0, 3, 6, minW=2, minH=4),
+            card4=Card(board, 15, 0, 3, 6, minW=2, minH=4),
             data_grid=DataGrid(board, 7, 7, 6, 7, minH=4),
         )
         state.w = w
