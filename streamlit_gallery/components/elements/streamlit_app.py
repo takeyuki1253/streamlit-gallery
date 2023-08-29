@@ -16,17 +16,12 @@ def main():
         =====================
 
         ツナの給餌量・給仕判断の可視化
-
-        [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
-        [github_link]: https://github.com/okld/streamlit-elements
-
-        [pypi_badge]: https://badgen.net/pypi/v/streamlit-elements?icon=pypi&color=black&label
-        [pypi_link]: https://pypi.org/project/streamlit-elements
+        
         """
     )
 
-    with st.expander("GETTING STARTED"):
-        st.write((Path(__file__).parent/"README.md").read_text())
+    # with st.expander("GETTING STARTED"):
+    #     st.write((Path(__file__).parent/"README.md").read_text())
 
     st.title("")
 
@@ -61,7 +56,7 @@ def main():
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
             w.card(w.editor.get_content("Card content"))
-            w.card(w.editor.get_content("Card content2"))
+            w.card2(w.editor.get_content("Card content2"))
             w.data_grid(w.editor.get_content("Data grid"))
 
 
