@@ -29,15 +29,15 @@ def main():
         board = Dashboard()
         w = SimpleNamespace(
             dashboard=board,
-            editor=Editor(board, 6, 0, 6, 7, minW=3, minH=3),
+            editor=Editor(board, 0, 5, 6, 7, minW=3, minH=3),
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
             card=Card(board, 0, 0, 4, 4, minW=2, minH=4),
-            card2=Card(board, 0, 0, 4, 4, minW=2, minH=4),
-            card3=Card(board, 0, 0, 4, 4, minW=2, minH=4),
-            card4=Card(board, 0, 0, 4, 4, minW=2, minH=4),
-            data_grid=DataGrid(board, 6, 8, 6, 7, minH=4),
+            card2=Card(board, 5, 0, 4, 4, minW=2, minH=4),
+            card3=Card(board, 10, 0, 4, 4, minW=2, minH=4),
+            card4=Card(board, 15, 0, 4, 4, minW=2, minH=4),
+            data_grid=DataGrid(board, 7, 5, 6, 7, minH=4),
         )
         state.w = w
 
