@@ -38,7 +38,7 @@ def main():
             card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
             card3=Card(board, 6, 4, 3, 6, minW=2, minH=4),
             card4=Card(board, 9, 4, 3, 6, minW=2, minH=4),
-            data_grid=DataGrid(board, 7, 7, 6, 7, minH=4),
+            # data_grid=DataGrid(board, 7, 7, 6, 7, minH=4),
         )
         state.w = w
         
