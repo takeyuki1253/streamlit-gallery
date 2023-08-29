@@ -29,7 +29,7 @@ class Card(Dashboard.Item):
 
             with mui.CardContent(sx={"flex": 1}):
                 with mui.Typography:
-                    html(content)
+                    html.div(content)
             # with mui.CardContent(sx={"flex": 1}):
             # # Here, we exit the mui context and use Streamlit's markdown function to render HTML
             #     st.markdown(content, unsafe_allow_html=True)
