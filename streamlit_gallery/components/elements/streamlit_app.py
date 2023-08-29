@@ -33,15 +33,17 @@ def main():
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
-            card=Card(board, 0, 0, 3, 6, minW=2, minH=4),
-            card2=Card(board, 3, 0, 3, 6, minW=2, minH=4),
-            card3=Card(board, 6, 0, 3, 6, minW=2, minH=4),
-            card4=Card(board, 9, 0, 3, 6, minW=2, minH=4),
+            header=Card(board, 0, 0, 3, 12, minW2, minH=4),
+            card=Card(board, 0, 4, 3, 6, minW=2, minH=4),
+            card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
+            card3=Card(board, 6, 4, 3, 6, minW=2, minH=4),
+            card4=Card(board, 9, 4, 3, 6, minW=2, minH=4),
             data_grid=DataGrid(board, 7, 7, 6, 7, minH=4),
         )
         state.w = w
-
+        
         w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("header", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content4", Card.DEFAULT_CONTENT, "plaintext")
@@ -59,6 +61,7 @@ def main():
             # w.player()
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
+            w.header(w.editor.get_content("header"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
