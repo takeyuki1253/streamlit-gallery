@@ -1,4 +1,4 @@
-from streamlit_elements import mui
+from streamlit_elements import mui, html
 from .dashboard import Dashboard
 
 
@@ -26,9 +26,9 @@ class Card(Dashboard.Item):
             #     alt="ikesu",
             # )
 
-            with mui.CardContent(sx={"flex": 1}, variant={h1: "h1"}):
-                mui.Typography(content)
-
+            with mui.CardContent(sx={"flex": 1}):
+                mui.Typography:
+                    html.h1(content)
             # with mui.CardActions(disableSpacing=True):
             #     mui.IconButton(mui.icon.Favorite)
             #     mui.IconButton(mui.icon.Share)
