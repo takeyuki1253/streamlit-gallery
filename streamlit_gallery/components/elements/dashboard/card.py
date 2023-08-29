@@ -6,6 +6,9 @@ class Card(Dashboard.Item):
 
     DEFAULT_CONTENT = (
         "マグロの給餌量と給餌判断について "
+        "日付：023/8/29"
+        "本日の給餌可否： Yes"
+        "本日の給餌量： 100kg"
     )
 
     def __call__(self, content):
