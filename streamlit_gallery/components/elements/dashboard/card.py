@@ -27,7 +27,7 @@ class Card(Dashboard.Item):
             # )
 
             with mui.CardContent(sx={"flex": 1}):
-                with mui.Typography(content)
+                mui.Typography(content)
             # with mui.CardActions(disableSpacing=True):
             #     mui.IconButton(mui.icon.Favorite)
             #     mui.IconButton(mui.icon.Share)
