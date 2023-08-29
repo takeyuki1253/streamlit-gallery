@@ -27,11 +27,12 @@ class Card(Dashboard.Item):
             #     alt="ikesu",
             # )
 
-            # with mui.CardContent(sx={"flex": 1}):
-            #     mui.Typography(content)
             with mui.CardContent(sx={"flex": 1}):
-            # Here, we exit the mui context and use Streamlit's markdown function to render HTML
-                st.markdown(content, unsafe_allow_html=True)
+                with mui.Typography:
+                    html(content)
+            # with mui.CardContent(sx={"flex": 1}):
+            # # Here, we exit the mui context and use Streamlit's markdown function to render HTML
+            #     st.markdown(content, unsafe_allow_html=True)
             # with mui.CardActions(disableSpacing=True):
             #     mui.IconButton(mui.icon.Favorite)
             #     mui.IconButton(mui.icon.Share)
