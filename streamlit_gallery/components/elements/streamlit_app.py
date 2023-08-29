@@ -43,7 +43,7 @@ def main():
         state.w = w
         
         w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
-        w.editor.add_tab("header", Card.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("header content", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content4", Card.DEFAULT_CONTENT, "plaintext")
@@ -61,7 +61,7 @@ def main():
             # w.player()
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
-            w.header(w.editor.get_content("header"))
+            w.header(w.editor.get_content("header content"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
