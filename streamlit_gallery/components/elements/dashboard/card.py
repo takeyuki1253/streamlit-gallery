@@ -27,7 +27,7 @@ class Card(Dashboard.Item):
             # )
 
             with mui.CardContent(sx={"flex": 1}):
-                mui.Typography:
+                with mui.Typography:
                     html.h1(content)
             # with mui.CardActions(disableSpacing=True):
             #     mui.IconButton(mui.icon.Favorite)
