@@ -12,7 +12,7 @@ from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player
 def main():
     st.write(
         """
-        Tsuna Test &nbsp; [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
+        Tsuna Test 
         =====================
 
         ツナの給餌量・給仕判断の可視化
