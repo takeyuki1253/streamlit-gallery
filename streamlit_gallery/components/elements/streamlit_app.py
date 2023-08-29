@@ -42,7 +42,7 @@ def main():
         )
         state.w = w
         
-        w.editor.add_tab("Card content", st.write(DEFAULT_CONTENT, unsafe_allow_html=True), "plaintext")
+        w.editor.add_tab("Card content", st.write(Card.DEFAULT_CONTENT, unsafe_allow_html=True), "plaintext")
         w.editor.add_tab("header content", Card.DEFAULT_CONTENT, "html")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
