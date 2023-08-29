@@ -47,7 +47,7 @@ def main():
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content4", Card.DEFAULT_CONTENT, "plaintext")
-        w.editor.add_tab("Data grid", json.dumps(DataGrid.DEFAULT_ROWS, indent=2), "json")
+        # w.editor.add_tab("Data grid", json.dumps(DataGrid.DEFAULT_ROWS, indent=2), "json")
         # w.editor.add_tab("Radar chart", json.dumps(Radar.DEFAULT_DATA, indent=2), "json")
         # w.editor.add_tab("Pie chart", json.dumps(Pie.DEFAULT_DATA, indent=2), "json")
     else:
@@ -66,7 +66,7 @@ def main():
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
             w.card4(w.editor.get_content("Card content4"))
-            w.data_grid(w.editor.get_content("Data grid"))
+            # w.data_grid(w.editor.get_content("Data grid"))
 
 
 if __name__ == "__main__":
