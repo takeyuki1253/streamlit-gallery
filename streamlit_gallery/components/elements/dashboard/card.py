@@ -26,7 +26,7 @@ class Card(Dashboard.Item):
             #     alt="ikesu",
             # )
 
-            with mui.CardContent(sx={"flex": 1}, variant="h1"):
+            with mui.CardContent(sx={"flex": 1}, variant={h1: "h1"}):
                 mui.Typography(content)
 
             # with mui.CardActions(disableSpacing=True):
