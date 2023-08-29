@@ -38,8 +38,8 @@ def main():
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
-            card=Card(board, 6, 7, 3, 7, minW=2, minH=4),
-            card2=Card(board, 6, 7, 3, 7, minW=2, minH=4),
+            # card=Card(board, 6, 7, 3, 7, minW=2, minH=4),
+            # card2=Card(board, 6, 7, 3, 7, minW=2, minH=4),
             data_grid=DataGrid(board, 6, 13, 6, 7, minH=4),
         )
         state.w = w
@@ -60,7 +60,7 @@ def main():
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
             w.card(w.editor.get_content("Card content"))
-            w.card(w.editor.get_content("Card content"))
+            # w.card(w.editor.get_content("Card content"))
             w.data_grid(w.editor.get_content("Data grid"))
 
 
