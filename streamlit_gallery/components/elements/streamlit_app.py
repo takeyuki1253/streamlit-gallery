@@ -42,8 +42,8 @@ def main():
         )
         state.w = w
         
-        w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("header content", Card.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content4", Card.DEFAULT_CONTENT, "plaintext")
@@ -67,7 +67,6 @@ def main():
             w.card3(w.editor.get_content("Card content3"))
             w.card4(w.editor.get_content("Card content4"))
             # w.data_grid(w.editor.get_content("Data grid"))
-
 
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
