@@ -6,10 +6,10 @@ from .dashboard import Dashboard
 class Card(Dashboard.Item):
 
     DEFAULT_CONTENT = """
-        <h1>マグロの給餌量と給餌判断について</h1>
-        <p>日付：023/8/29</p>
-        <p>本日の給餌可否： Yes</p>
-        <p>本日の給餌量： 100kg</p>
+        マグロの給餌量と給餌判断について
+        日付：2023/8/29
+        本日の給餌可否： Yes
+        本日の給餌量： 100kg
     """
 
     def __call__(self, content):
