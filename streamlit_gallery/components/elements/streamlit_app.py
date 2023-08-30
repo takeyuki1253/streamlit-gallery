@@ -32,7 +32,7 @@ def main():
             editor=Editor(board, 0, 7, 6, 7, minW=3, minH=3),
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
-            # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
+            radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
             header=Card(board, 0, 0, 12, 6, minW=2, minH=4),
             card=Card(board, 0, 4, 3, 6, minW=2, minH=4),
             card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
@@ -48,7 +48,7 @@ def main():
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content4", Card.DEFAULT_CONTENT, "plaintext")
         # w.editor.add_tab("Data grid", json.dumps(DataGrid.DEFAULT_ROWS, indent=2), "json")
-        # w.editor.add_tab("Radar chart", json.dumps(Radar.DEFAULT_DATA, indent=2), "json")
+        w.editor.add_tab("Radar chart", json.dumps(Radar.DEFAULT_DATA, indent=2), "json")
         # w.editor.add_tab("Pie chart", json.dumps(Pie.DEFAULT_DATA, indent=2), "json")
     else:
         w = state.w
@@ -60,7 +60,7 @@ def main():
             w.editor()
             # w.player()
             # w.pie(w.editor.get_content("Pie chart"))
-            # w.radar(w.editor.get_content("Radar chart"))
+            w.radar(w.editor.get_content("Radar chart"))
             w.header(w.editor.get_content("header content"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
