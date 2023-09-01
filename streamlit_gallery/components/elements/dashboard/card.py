@@ -1,4 +1,4 @@
-from streamlit_elements import mui
+from streamlit_elements import mui, html
 import streamlit as st
 from .dashboard import Dashboard
 
@@ -28,7 +28,13 @@ class Card(Dashboard.Item):
             # )
 
             with mui.CardContent(sx={"flex": 1}):
-                mui.Typography(content)
+                with mui.Typography:
+                    # 文字列を改行で分割
+                    lines = content.strip().split('\n')
+                    # 各行に対して処理を実行
+                    for line in lines:
+                        html.h2(line)
+                        
             # with mui.CardContent(sx={"flex": 1}):
             # # Here, we exit the mui context and use Streamlit's markdown function to render HTML
             #     st.markdown(content, unsafe_allow_html=True)
