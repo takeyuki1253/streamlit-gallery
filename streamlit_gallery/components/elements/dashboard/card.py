@@ -33,7 +33,7 @@ class Card(Dashboard.Item):
                     lines = content.strip().split('\n')
                     # 各行に対して処理を実行
                     for line in lines:
-                        html.h2(line)
+                        html.h4(line)
                         html.br()
                         
             # with mui.CardContent(sx={"flex": 1}):
