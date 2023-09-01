@@ -2,21 +2,16 @@ from streamlit_elements import mui
 import streamlit as st
 from .dashboard import Dashboard
 
-import html
-
 class Card(Dashboard.Item):
 
     DEFAULT_CONTENT = """
-        マグロの給餌量と給餌判断について<br>
-        日付：2023/8/29 
-        本日の給餌可否： Yes
-        本日の給餌量： 100kg
+        <h2>マグロの給餌量と給餌判断について</h2>
+        <p>日付：2023/8/29</p>
+        <p>本日の給餌可否： Yes</p>
+        <p>本日の給餌量： 100kg</p>
     """
 
     def __call__(self, content):
-        # HTMLエンコーディングを適用
-        encoded_content = html.escape(content)
-
         with mui.Card(key=self._key, sx={"display": "flex", "flexDirection": "column", "borderRadius": 3, "overflow": "hidden"}, elevation=1):
             mui.CardHeader(
                 title="生簀ごとのツナ給餌量",
@@ -26,7 +21,8 @@ class Card(Dashboard.Item):
                 className=self._draggable_class)
             
             with mui.CardContent(sx={"flex": 1}):
-                mui.Typography(encoded_content)
+                # Streamlit's markdown functionを使用してHTMLをレンダリング
+                st.markdown(content, unsafe_allow_html=True)
 
 
 
