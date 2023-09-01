@@ -3,7 +3,7 @@ import streamlit as st
 from .dashboard import Dashboard
 
 
-class Card(Dashboard.Item):
+class Popup1(Dashboard.Item):
 
     DEFAULT_CONTENT = """
         最大風速： 4 m/s
