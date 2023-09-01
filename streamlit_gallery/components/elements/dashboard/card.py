@@ -34,7 +34,7 @@ class Card(Dashboard.Item):
                     # 各行に対して処理を実行
                     for line in lines:
                         html.div(line)
-                        html.br()
+                        # html.br()
                         
             # with mui.CardContent(sx={"flex": 1}):
             # # Here, we exit the mui context and use Streamlit's markdown function to render HTML
