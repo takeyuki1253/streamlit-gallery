@@ -6,7 +6,7 @@ from streamlit import session_state as state
 from streamlit_elements import elements, sync, event, mui, html, dashboard
 from types import SimpleNamespace
 
-from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player
+from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player, Popup1
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
-            header=Card(board, 0, 0, 12, 6, minW=2, minH=4),
+            header=Popup1(board, 0, 0, 12, 6, minW=2, minH=4),
             card=Card(board, 0, 4, 3, 6, minW=2, minH=4),
             card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
             card3=Card(board, 6, 4, 3, 6, minW=2, minH=4),
@@ -42,7 +42,7 @@ def main():
         )
         state.w = w
         
-        w.editor.add_tab("header content", Card.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("header content", Popup1.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
