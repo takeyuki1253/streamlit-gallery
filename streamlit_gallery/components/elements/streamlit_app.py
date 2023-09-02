@@ -34,8 +34,8 @@ def main():
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
             header=Popup1(board, 0, 0, 12, 3, minW=2, minH=4),
-            header2=Popup2(board, 0, 3, 12, 3, minW=2, minH=4),
-            header3=Popup3(board, 0, 3, 12, 3, minW=2, minH=4),
+            header2=Popup2(board, 3, 0, 12, 3, minW=2, minH=4),
+            header3=Popup3(board, 6, 0, 12, 3, minW=2, minH=4),
             card=Card(board, 0, 4, 3, 6, minW=2, minH=4),
             card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
             card3=Card(board, 6, 4, 3, 6, minW=2, minH=4),
@@ -66,8 +66,8 @@ def main():
             # w.pie(w.editor.get_content("Pie chart"))
             # w.radar(w.editor.get_content("Radar chart"))
             w.header(w.editor.get_content("header content"))
-            w.header(w.editor.get_content("header content2"))
-            w.header(w.editor.get_content("header content3"))
+            w.header2(w.editor.get_content("header content2"))
+            w.header3(w.editor.get_content("header content3"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
