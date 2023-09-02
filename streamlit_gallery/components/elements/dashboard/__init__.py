@@ -6,3 +6,4 @@ from .pie import Pie
 from .player import Player
 from .radar import Radar
 from .popup1 import Popup1
+from .popup2 import Popup2
