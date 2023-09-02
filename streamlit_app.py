@@ -18,6 +18,7 @@ def main():
             # page.item("Disqus", components.disqus)
             page.item("Ikesu-1⭐", components.elements)
             page.item("Ikesu-2⭐", components.elements)
+            page.item("Ikesu-3⭐", components.elements)
             # page.item("Pandas profiling", components.pandas_profiling)
             # page.item("Quill editor", components.quill_editor)
             # page.item("React player", components.react_player)
