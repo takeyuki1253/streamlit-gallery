@@ -7,3 +7,4 @@ from .player import Player
 from .radar import Radar
 from .popup1 import Popup1
 from .popup2 import Popup2
+from .popup3 import Popup3
