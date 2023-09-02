@@ -6,7 +6,7 @@ from streamlit import session_state as state
 from streamlit_elements import elements, sync, event, mui, html, dashboard
 from types import SimpleNamespace
 
-from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player, Popup1, Popup2
+from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player, Popup1, Popup2, Popup3
 
 
 def main():
@@ -33,8 +33,9 @@ def main():
             # player=Player(board, 0, 12, 6, 10, minH=5),
             # pie=Pie(board, 6, 0, 6, 7, minW=3, minH=4),
             # radar=Radar(board, 12, 7, 3, 7, minW=2, minH=4),
-            header=Popup1(board, 0, 0, 12, 6, minW=2, minH=4)
+            header=Popup1(board, 0, 0, 12, 6, minW=2, minH=4),
             header2=Popup2(board, 0, 0, 12, 6, minW=2, minH=4),
+            header3=Popup3(board, 0, 0, 12, 6, minW=2, minH=4),
             card=Card(board, 0, 4, 3, 6, minW=2, minH=4),
             card2=Card(board, 3, 4, 3, 6, minW=2, minH=4),
             card3=Card(board, 6, 4, 3, 6, minW=2, minH=4),
@@ -45,6 +46,7 @@ def main():
         
         w.editor.add_tab("header content", Popup1.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("header content2", Popup2.DEFAULT_CONTENT, "plaintext")
+        w.editor.add_tab("header content3", Popup3.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content2", Card.DEFAULT_CONTENT, "plaintext")
         w.editor.add_tab("Card content3", Card.DEFAULT_CONTENT, "plaintext")
@@ -65,6 +67,7 @@ def main():
             # w.radar(w.editor.get_content("Radar chart"))
             w.header(w.editor.get_content("header content"))
             w.header(w.editor.get_content("header content2"))
+            w.header(w.editor.get_content("header content3"))
             w.card(w.editor.get_content("Card content"))
             w.card2(w.editor.get_content("Card content2"))
             w.card3(w.editor.get_content("Card content3"))
