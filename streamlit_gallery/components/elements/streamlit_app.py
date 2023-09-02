@@ -6,7 +6,7 @@ from streamlit import session_state as state
 from streamlit_elements import elements, sync, event, mui, html, dashboard
 from types import SimpleNamespace
 
-from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player, Popup1
+from .dashboard import Dashboard, Editor, Card, DataGrid, Radar, Pie, Player, Popup1, Popup2
 
 
 def main():
